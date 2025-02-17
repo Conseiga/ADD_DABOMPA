@@ -1,0 +1,34 @@
+﻿<Window x:Class="ADD_DABOMPA.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADD_DABOMPA.Views.UserControls" 
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="ADD Dabompa" Style="{DynamicResource StyleWindows}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <local:UserC_HeadBar/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Side Menu -->
+            <local:UserC_SideBarMenu x:Name="UserC_SideBarMenu" Grid.Column="0"/>
+
+            <!-- Main Content -->
+            <Border Grid.Column="1" Background="White">
+                <!-- Your main content here -->
+            </Border>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <FontFamily x:Key="BleqckiFont">pack://application:,,,/Views/Resources/Fonts/Bleqcki.ttf</FontFamily>
+
+    <Style x:Key="stl_DefaultTextBlock" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForegroundBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource BleqckiFont}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+</ResourceDictionary>

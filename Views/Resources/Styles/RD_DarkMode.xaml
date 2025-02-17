@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:Name="RD_DarkMode">
+    <Color x:Key="stl_DefaultForeground">white</Color>
+    <Color x:Key="stl_DefaultForeground_2">#29408B</Color>
+    <Color x:Key="stl_DefaultBackground">#242525</Color>
+    <Color x:Key="stl_DefaultBackground_2">#29408B</Color>
+    <Color x:Key="stl_DefaultBackgroundPage">#2D2E2E</Color>
+    <Color x:Key="stl_DefaultBorder">white</Color>
+
+    <SolidColorBrush x:Key="stl_DefaultForegroundBrush" Color="{DynamicResource stl_DefaultForeground}" />
+    <SolidColorBrush x:Key="stl_DefaultForeground_2Brush" Color="{DynamicResource stl_DefaultForeground_2}" />
+    <SolidColorBrush x:Key="stl_DefaultBackgroundBrush" Color="{DynamicResource stl_DefaultBackground}" />
+    <SolidColorBrush x:Key="stl_DefaultBackground_2Brush" Color="{DynamicResource stl_DefaultBackground_2}" />
+    <SolidColorBrush x:Key="stl_DefaultBackgroundPageBrush" Color="{DynamicResource stl_DefaultBackgroundPage}" />
+    <SolidColorBrush x:Key="stl_DefaultBorderBrush" Color="{DynamicResource stl_DefaultBorder}" />
+
+</ResourceDictionary>
