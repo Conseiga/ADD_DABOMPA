@@ -2,6 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:Name="RD_LightMode">
 
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Views/Resources/Styles/StyleMerging.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
     <Color x:Key="stl_DefaultForeground">#242525</Color>
     <Color x:Key="stl_DefaultForeground_2">#29408B</Color>
     <Color x:Key="stl_DefaultBackground">white</Color>
