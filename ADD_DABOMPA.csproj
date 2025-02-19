@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Resources\Images\Icons\power_button_off_black.png" />
+    <None Remove="Views\Resources\Images\Icons\power_button_off_red.png" />
+    <None Remove="Views\Resources\Images\Icons\power_button_off_white.png" />
     <None Remove="Views\Resources\Images\Logos\CarteGuinee.png" />
   </ItemGroup>
 
@@ -21,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Views\Resources\Images\Icons\power_button_off_black.png" />
+    <Resource Include="Views\Resources\Images\Icons\power_button_off_red.png" />
+    <Resource Include="Views\Resources\Images\Icons\power_button_off_white.png" />
     <Resource Include="Views\Resources\Images\Logos\CarteGuinee.png" />
     <Resource Include="Views\Resources\Images\Logos\add_logo.jpg" />
   </ItemGroup>
