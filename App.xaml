@@ -7,9 +7,6 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Views/Resources/Styles/RD_LightMode.xaml"/>
-                <ResourceDictionary Source="/Views/Resources/Styles/StyleWindows.xaml"/>
-                <ResourceDictionary Source="/Views/Resources/Styles/StyleText.xaml"/>
-                <ResourceDictionary Source="/Views/Resources/Styles/StyleButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <!-- Menu Toggle Button Style -->
