@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:ADD_DABOMPA.Views.UserControls" 
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="ADD Dabompa" Style="{DynamicResource StyleWindows}">
+        Style="{DynamicResource StyleWindows}"
+        Title="ADD Dabompa">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -25,7 +26,7 @@
             <local:UserC_SideBarMenu x:Name="UserC_SideBarMenu" Grid.Column="0"/>
 
             <!-- Main Content -->
-            <Border Grid.Column="1" Background="White">
+            <Border Grid.Column="1" Background="{DynamicResource stl_DefaultBackgroundPageBrush}" CornerRadius="10,0,0,0">
                 <!-- Your main content here -->
             </Border>
         </Grid>
