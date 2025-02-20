@@ -50,18 +50,14 @@
 
 
     <!-- Menu Toggle Button Style -->
-    <Style x:Key="MenuToggleButton" TargetType="Button">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Foreground" Value="#0331BE"/>
+    <Style x:Key="MenuToggleButton" TargetType="Button"  BasedOn="{StaticResource stl_DefaultButton}">
         <Setter Property="FontSize" Value="18"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#3E3E42"/>
-            </Trigger>
-        </Style.Triggers>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Margin" Value="7"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
     </Style>
 
     <!-- Menu Item Button Style -->
