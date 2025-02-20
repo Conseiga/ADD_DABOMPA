@@ -47,5 +47,36 @@
         <Setter Property="BorderBrush" Value="{DynamicResource stl_DefaultBorderBrush}"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
-    
+
+
+    <!-- Menu Toggle Button Style -->
+    <Style x:Key="MenuToggleButton" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="#0331BE"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#3E3E42"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Menu Item Button Style -->
+    <Style x:Key="MenuItemButton" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="15 5"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#3E3E42"/>
+                <Setter Property="Foreground" Value="#00ADEF"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
 </ResourceDictionary>
