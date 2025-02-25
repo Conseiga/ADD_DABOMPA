@@ -60,6 +60,13 @@
                     Style="{DynamicResource MenuToggleButton}"        
                     Content="Membre"/>
 
+            <Button x:Name="btn_departement"
+                    Style="{DynamicResource MenuToggleButton}"        
+                    Content="Departement"/>
+
+            <Button x:Name="btn_flux_monetaire"
+                    Style="{DynamicResource MenuToggleButton}"        
+                    Content="Flux Monetaire"/>
         </ItemsControl>
 
     </Grid>
