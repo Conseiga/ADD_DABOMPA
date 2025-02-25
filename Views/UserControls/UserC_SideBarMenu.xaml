@@ -53,9 +53,12 @@
             </ItemsControl.ItemContainerStyle>
 
             <Button x:Name="btn_Aceuil"
-                    Style="{DynamicResource MenuToggleButton}"
-                    
+                    Style="{DynamicResource MenuToggleButton}"                    
                     Content="Aceuil"/>
+
+            <Button x:Name="btn_membre"
+                    Style="{DynamicResource MenuToggleButton}"        
+                    Content="Membre"/>
 
         </ItemsControl>
 
