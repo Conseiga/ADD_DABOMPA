@@ -5,26 +5,27 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ADD_DABOMPA.Views.UserControls"
              mc:Ignorable="d">
-        <!--d:DesignHeight="450" d:DesignWidth="800"-->
-        <UserControl.Resources>
-            <Storyboard x:Key="ExpandAnimation">
-                <DoubleAnimation Storyboard.TargetProperty="Width"
+    <!--d:DesignHeight="450" d:DesignWidth="800"-->
+    <UserControl.Resources>
+        <Storyboard x:Key="ExpandAnimation">
+            <DoubleAnimation Storyboard.TargetProperty="Width"
                                  Duration="0:0:0.2"
                                  To="200"
                                  AccelerationRatio="0.3"/>
-            </Storyboard>
-            <Storyboard x:Key="CollapseAnimation">
-                <DoubleAnimation Storyboard.TargetProperty="Width"
+        </Storyboard>
+        <Storyboard x:Key="CollapseAnimation">
+            <DoubleAnimation Storyboard.TargetProperty="Width"
                                  Duration="0:0:0.2"
                                  To="50"
                                  AccelerationRatio="0.3"/>
-            </Storyboard>
+        </Storyboard>
 
-            <DataTemplate x:Key="MenuItemTemplate">
-                <Button Style="{DynamicResource MenuItemButton}"
+        <DataTemplate x:Key="MenuItemTemplate">
+            <Button Style="{DynamicResource MenuItemButton}"
                         Content="{Binding Title}"
-                        Command="{Binding Command}"/>
-            </DataTemplate>
+                        Command="{Binding Command}"
+                        Name=""/>
+        </DataTemplate>
     </UserControl.Resources>
 
     <Grid Background="Transparent">
@@ -51,8 +52,14 @@
                     <Setter Property="Margin" Value="0 5 0 0"/>
                 </Style>
             </ItemsControl.ItemContainerStyle>
+
+            <Button x:Name="btn_Aceuil"
+                    Style="{DynamicResource MenuToggleButton}"
+                    
+                    Content="Aceuil"/>
+
         </ItemsControl>
-        
+
     </Grid>
 
 </UserControl>
