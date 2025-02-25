@@ -23,8 +23,7 @@
         <DataTemplate x:Key="MenuItemTemplate">
             <Button Style="{DynamicResource MenuItemButton}"
                         Content="{Binding Title}"
-                        Command="{Binding Command}"
-                        Name=""/>
+                        Command="{Binding Command}"/>
         </DataTemplate>
     </UserControl.Resources>
 
