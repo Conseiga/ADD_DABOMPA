@@ -66,45 +66,6 @@
         </Style.Triggers>
     </Style>
 
-
-    <!-- Menu Toggle Button Style -->
-    <Style x:Key="dsfg" TargetType="Button">
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForegroundBrush}"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border x:Name="border" 
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}"
-                        CornerRadius="10">
-                        <ContentPresenter HorizontalAlignment="Center"
-                          VerticalAlignment="Center"
-                          TextElement.FontWeight="Bold"
-                          TextElement.Foreground="{TemplateBinding Foreground}"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <!-- Mouse Over Effect -->
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{DynamicResource stl_DefaultForegroundBrush}"/>
-                <Setter Property="BorderBrush" Value="{DynamicResource stl_DefaultForeground_2Brush}"/>
-                <Setter Property="Foreground" Value="{DynamicResource stl_DefaultBackgroundBrush}"/>
-            </Trigger>
-
-            <!-- Pressed Effect -->
-            <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="DodgerBlue"/>
-                <Setter Property="BorderBrush" Value="Black"/>
-                <Setter Property="Foreground" Value="Black"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-
-
     <!-- Connection button style -->
     <Style x:Key="stl_ConnectionButton" TargetType="Button" BasedOn="{StaticResource stl_DefaultButton}">
         <Style.Triggers>
