@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Views\Resources\Images\Icons\btn-logout-100.png" />
+    <None Remove="Views\Resources\Images\Icons\btn-paramettre-100.png" />
     <None Remove="Views\Resources\Images\Icons\btn_departement_64.png" />
     <None Remove="Views\Resources\Images\Icons\btn_flux_monetaire_64.png" />
     <None Remove="Views\Resources\Images\Icons\btn_home_50.png" />
@@ -33,6 +34,7 @@
 
   <ItemGroup>
     <Resource Include="Views\Resources\Images\Icons\btn-logout-100.png" />
+    <Resource Include="Views\Resources\Images\Icons\btn-paramettre-100.png" />
     <Resource Include="Views\Resources\Images\Icons\btn_departement_64.png" />
     <Resource Include="Views\Resources\Images\Icons\btn_flux_monetaire_64.png" />
     <Resource Include="Views\Resources\Images\Icons\btn_home_50.png" />

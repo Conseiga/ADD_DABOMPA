@@ -8,6 +8,7 @@
     <BitmapImage x:Key="DepartementIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn_departement_64.png"/>
     <BitmapImage x:Key="FluxIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn_flux_monetaire_64.png"/>
     <BitmapImage x:Key="LogoutIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn-logout-100.png"/>
+    <BitmapImage x:Key="SettingIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn-paramettre-100.png"/>
 
 
 
@@ -61,7 +62,7 @@
             <Trigger Property="IsPressed" Value="True">
                 <Setter Property="Background" Value="DodgerBlue"/>
                 <Setter Property="BorderBrush" Value="Black"/>
-                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="Foreground" Value="White"/>
             </Trigger>
         </Style.Triggers>
     </Style>
