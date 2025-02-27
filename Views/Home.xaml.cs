@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using ADD_DABOMPA.Views.UserControls;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,8 +17,13 @@ namespace ADD_DABOMPA;
 /// </summary>
 public partial class Home : Window
 {
+    private UserC_SideBarMenu uc_UserC_SideBarMenu;
     public Home()
     {
         InitializeComponent();
+        uc_UserC_SideBarMenu = new UserC_SideBarMenu(this);
+        Grid.SetRow(uc_UserC_SideBarMenu, 0); // Row 1  
+        Grid.SetColumn(uc_UserC_SideBarMenu, 0); // Column 1  
+        grd_MainGrid.Children.Add(uc_UserC_SideBarMenu);
     }
 }

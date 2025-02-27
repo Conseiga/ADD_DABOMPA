@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,20 +26,19 @@ namespace ADD_DABOMPA.Views.UserControls
     /// </summary>
     public partial class UserC_SideBarMenu : UserControl
     {
-        Home parentWindow;
-        pg_Acceuil pageAcceuil;
-        pg_Departement pageDepartement;
-        pg_Membre pageMembre;
-        pg_Flux_Monetaire pageFlux_Monetaire;
-        pg_paramettre pageParaettre;
+        private Home parentWindow;
+        private pg_Acceuil pageAcceuil;
+        private pg_Departement pageDepartement;
+        private pg_Membre pageMembre;
+        private pg_Flux_Monetaire pageFlux_Monetaire;
+        private pg_paramettre pageParaettre;
 
-        public UserC_SideBarMenu()
+        public UserC_SideBarMenu(Home parentWindow)
         {
             InitializeComponent();
             this.Width = 50; // Initial collapsed state
 
-            // Initialize windows and pages 
-            parentWindow = VisualTreeHelper.GetParent(this);
+            this.parentWindow = parentWindow;
             pageAcceuil = new pg_Acceuil(); 
             pageDepartement = new pg_Departement(); 
             pageMembre = new pg_Membre();   
@@ -68,27 +68,12 @@ namespace ADD_DABOMPA.Views.UserControls
 
         private void OpenWindow(object sender, RoutedEventArgs e)
         {
-            if (parentWindow is Home homeWindow)
-            {
-                switch (sender)
-                {
-                    case btn_Aceuil:
-                        homeWindow.frm_body.Content = pageAcceuil;
-                        break;
-                    case btn_membre:
-                        homeWindow.frm_body.Content = pageMembre;
-                        break;
-                    case btn_departement:
-                        homeWindow.frm_body.Content = pageDepartement;
-                        break;
-                    case btn_flux_monetaire:
-                        homeWindow.frm_body.Content = pageFlux_Monetaire;
-                        break;
-                    default:
-                        homeWindow.frm_body.Content = pageParaettre;
-                }
-            }
-            
+            Button btn = (Button)sender;
+            if (btn.Equals(btn_Aceuil)) parentWindow.frm_body.Content = pageAcceuil;
+            else if (btn.Equals(btn_membre)) parentWindow.frm_body.Content = pageMembre;
+            else if (btn.Equals(btn_departement)) parentWindow.frm_body.Content = pageDepartement;
+            else if (btn.Equals(btn_flux_monetaire)) parentWindow.frm_body.Content = pageFlux_Monetaire;
+            else parentWindow.frm_body.Content = pageParaettre;
         }
     }
 }
