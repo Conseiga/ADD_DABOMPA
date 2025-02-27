@@ -57,7 +57,7 @@
                     Text="GUINÉE"
                     Padding="0"
                     TextAlignment="Left"
-                    Foreground="{DynamicResource stl_DefaultForegroundBrush}"
+                    Foreground="{DynamicResource stl_DefaultForeground_2Brush}"
                     />  
             </Viewbox>
 
@@ -66,15 +66,16 @@
         <Grid Grid.Column="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="210"/>
             </Grid.ColumnDefinitions>
             
             <Button Content="Se déconnecter" 
-                Width="120" 
+                Width="155" 
                 Height="30"
-                Padding="5"
+                Margin="0"
                 Grid.Column="2"
-                Style="{DynamicResource stl_ConnectionButton}">    
+                Style="{DynamicResource stl_ConnectionButton}"
+                Tag="{StaticResource LogoutIcon}">    
             </Button>              
         </Grid>
     </Grid>

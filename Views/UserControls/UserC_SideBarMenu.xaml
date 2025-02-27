@@ -38,7 +38,7 @@
         <!-- Toggle Button -->
         <Button x:Name="ToggleButton"
                 Grid.Row="0"
-                Style="{StaticResource MenuToggleButton}"
+                Style="{DynamicResource stl_DefaultButton}"
                 Click="ToggleButton_Click"
                 Tag="{StaticResource MenuIcon}"/>
 
@@ -53,22 +53,22 @@
             </ItemsControl.ItemContainerStyle>
 
             <Button x:Name="btn_Aceuil"
-                    Style="{DynamicResource MenuToggleButton}"                    
+                    Style="{DynamicResource stl_DefaultButton}"                    
                     Content="Aceuil"
                     Tag="{StaticResource HomeIcon}"/>
 
             <Button x:Name="btn_membre"
-                    Style="{DynamicResource MenuToggleButton}"        
+                    Style="{DynamicResource stl_DefaultButton}"        
                     Content="Membre"
                     Tag="{StaticResource MemberIcon}"/>
 
             <Button x:Name="btn_departement"
-                    Style="{DynamicResource MenuToggleButton}"        
+                    Style="{DynamicResource stl_DefaultButton}"        
                     Content="Departement"
                     Tag="{StaticResource DepartementIcon}"/>
 
             <Button x:Name="btn_flux_monetaire"
-                    Style="{DynamicResource MenuToggleButton}"        
+                    Style="{DynamicResource stl_DefaultButton}"        
                     Content="Flux Monetaire"
                     Tag="{StaticResource FluxIcon}"/>
         </ItemsControl>

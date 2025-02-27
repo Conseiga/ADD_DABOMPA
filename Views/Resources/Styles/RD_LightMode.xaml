@@ -12,6 +12,8 @@
     <Color x:Key="stl_DefaultBackground_2">#0664C6</Color>
     <Color x:Key="stl_DefaultBackgroundPage">#DBDEE7</Color>
     <Color x:Key="stl_MenuButtonHoverBackground">#DBDEE7</Color>
+    <Color x:Key="stl_ConnectionButtonHoverBackground">#B8220D</Color>
+    <Color x:Key="stl_ConnectionButtonHoverForeground">white</Color>
     <Color x:Key="stl_DefaultBorder">#242525</Color>
 
     <SolidColorBrush x:Key="stl_DefaultForegroundBrush" Color="{DynamicResource stl_DefaultForeground}" />
@@ -20,6 +22,8 @@
     <SolidColorBrush x:Key="stl_DefaultBackground_2Brush" Color="{DynamicResource stl_DefaultBackground_2}" />
     <SolidColorBrush x:Key="stl_DefaultBackgroundPageBrush" Color="{DynamicResource stl_DefaultBackgroundPage}" />
     <SolidColorBrush x:Key="stl_MenuButtonHoverBackgroundBrush" Color="{DynamicResource stl_MenuButtonHoverBackground}" />
+    <SolidColorBrush x:Key="stl_ConnectionButtonHoverBackgroundBrush" Color="{DynamicResource stl_ConnectionButtonHoverBackground}" />
+    <SolidColorBrush x:Key="stl_ConnectionButtonHoverForegroundBrush" Color="{DynamicResource stl_ConnectionButtonHoverForeground}" />
     <SolidColorBrush x:Key="stl_DefaultBorderBrush" Color="{DynamicResource stl_DefaultBorder}" />
 
 </ResourceDictionary>
