@@ -79,6 +79,14 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Style.Triggers>
+            <!-- Mouse Over Effect -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource stl_MenuButtonHoverBackgroundBrush}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource stl_DefaultForeground_2Brush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForeground_2Brush}"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 
     <!-- Menu Item Button Style -->
