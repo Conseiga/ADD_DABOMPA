@@ -40,8 +40,7 @@
                 Grid.Row="0"
                 Style="{StaticResource MenuToggleButton}"
                 Click="ToggleButton_Click"
-                Content="☰"
-                FontSize="16"/>
+                Tag="{StaticResource MenuIcon}"/>
 
         <!-- Menu Items -->
         <ItemsControl Grid.Row="1"
@@ -60,15 +59,18 @@
 
             <Button x:Name="btn_membre"
                     Style="{DynamicResource MenuToggleButton}"        
-                    Content="Membre"/>
+                    Content="Membre"
+                    Tag="{StaticResource MemberIcon}"/>
 
             <Button x:Name="btn_departement"
                     Style="{DynamicResource MenuToggleButton}"        
-                    Content="Departement"/>
+                    Content="Departement"
+                    Tag="{StaticResource DepartementIcon}"/>
 
             <Button x:Name="btn_flux_monetaire"
                     Style="{DynamicResource MenuToggleButton}"        
-                    Content="Flux Monetaire"/>
+                    Content="Flux Monetaire"
+                    Tag="{StaticResource FluxIcon}"/>
         </ItemsControl>
 
     </Grid>

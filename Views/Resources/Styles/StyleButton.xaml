@@ -2,10 +2,12 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!-- Button Icons -->
-    <BitmapImage x:Key="HomeIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/power_button_off_black.png"/>
-    <BitmapImage x:Key="UserIcon" UriSource="/YourProjectName;component/Assets/Icons/user.png"/>
-    <BitmapImage x:Key="DepartmentIcon" UriSource="/YourProjectName;component/Assets/Icons/department.png"/>
-    <BitmapImage x:Key="MoneyIcon" UriSource="/YourProjectName;component/Assets/Icons/money.png"/>
+    <BitmapImage x:Key="HomeIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn_home_50.png"/>
+    <BitmapImage x:Key="MenuIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn_menu_60.png"/>
+    <BitmapImage x:Key="MemberIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn_member_64.png"/>
+    <BitmapImage x:Key="DepartementIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn_departement_64.png"/>
+    <BitmapImage x:Key="FluxIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn_flux_monetaire_64.png"/>
+    
     
     
     
