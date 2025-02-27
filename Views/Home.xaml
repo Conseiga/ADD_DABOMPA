@@ -28,7 +28,7 @@
 
             <!-- Main Content -->
             <Border Grid.Column="1" Background="{DynamicResource stl_DefaultBackgroundPageBrush}" CornerRadius="10,0,0,0">
-                <!-- Your main content here -->
+                <Frame x:Name="frm_body" Margin="2"/>
             </Border>
         </Grid>
 

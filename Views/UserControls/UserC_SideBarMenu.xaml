@@ -57,30 +57,36 @@
             <Button x:Name="btn_Aceuil"
                     Style="{DynamicResource stl_DefaultButton}"                    
                     Content="Aceuil"
-                    Tag="{StaticResource HomeIcon}"/>
+                    Tag="{StaticResource HomeIcon}"
+                    Click="OpenWindow"/>
 
             <Button x:Name="btn_membre"
                     Style="{DynamicResource stl_DefaultButton}"        
                     Content="Membre"
-                    Tag="{StaticResource MemberIcon}"/>
+                    Tag="{StaticResource MemberIcon}"
+                    Click="OpenWindow"/>
 
             <Button x:Name="btn_departement"
                     Style="{DynamicResource stl_DefaultButton}"        
                     Content="Departement"
-                    Tag="{StaticResource DepartementIcon}"/>
+                    Tag="{StaticResource DepartementIcon}"
+                    Click="OpenWindow"/>
 
             <Button x:Name="btn_flux_monetaire"
                     Style="{DynamicResource stl_DefaultButton}"        
                     Content="Flux Monetaire"
-                    Tag="{StaticResource FluxIcon}"/>
+                    Tag="{StaticResource FluxIcon}"
+                    Click="OpenWindow"/>
         </ItemsControl>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal">
             <Button 
+                 x:Name="btn_settings"
                  Style="{DynamicResource stl_DefaultButton}"        
                  Tag="{StaticResource SettingIcon}"
                  Width="40"
-                 Margin="6"/>
+                 Margin="6"
+                Click="OpenWindow"/>
         </StackPanel>
        
 
