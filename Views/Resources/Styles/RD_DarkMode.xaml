@@ -7,9 +7,9 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Color x:Key="stl_DefaultForeground">white</Color>
-    <Color x:Key="stl_DefaultForeground_2">#29408B</Color>
+    <Color x:Key="stl_DefaultForeground_2">#0664C6</Color>
     <Color x:Key="stl_DefaultBackground">#242525</Color>
-    <Color x:Key="stl_DefaultBackground_2">#29408B</Color>
+    <Color x:Key="stl_DefaultBackground_2">#0664C6</Color>
     <Color x:Key="stl_DefaultBackgroundPage">#2D2E2E</Color>
     <Color x:Key="stl_MenuButtonHoverBackground">#DBDEE7</Color>
     <Color x:Key="stl_DefaultBorder">white</Color>
