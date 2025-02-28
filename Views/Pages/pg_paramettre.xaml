@@ -9,9 +9,9 @@
       Title="pg_paramettre">
 
     <Grid>
-        <Viewbox>
-            <TextBlock
-        Text="paramettre"/>
-        </Viewbox>
+        <ToggleButton x:Name="ToggleMyButton" Content="Toggle Me"   
+                      Width="100" Height="30"   
+                      IsChecked="{Binding IsToggled, Mode=TwoWay}"   
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Page>
