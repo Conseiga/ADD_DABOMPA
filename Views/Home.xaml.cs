@@ -21,7 +21,7 @@ public partial class Home : Window
     public Home()
     {
         InitializeComponent();
-        uc_UserC_SideBarMenu = new UserC_SideBarMenu(this);
+        uc_UserC_SideBarMenu = new UserC_SideBarMenu(frm_body);
         Grid.SetRow(uc_UserC_SideBarMenu, 0); // Row 1  
         Grid.SetColumn(uc_UserC_SideBarMenu, 0); // Column 1  
         grd_MainGrid.Children.Add(uc_UserC_SideBarMenu);

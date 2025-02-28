@@ -26,19 +26,19 @@ namespace ADD_DABOMPA.Views.UserControls
     /// </summary>
     public partial class UserC_SideBarMenu : UserControl
     {
-        private Home parentWindow;
+        private Frame _frame;
         private pg_Acceuil pageAcceuil;
         private pg_Departement pageDepartement;
         private pg_Membre pageMembre;
         private pg_Flux_Monetaire pageFlux_Monetaire;
         private pg_paramettre pageParaettre;
 
-        public UserC_SideBarMenu(Home parentWindow)
+        public UserC_SideBarMenu(Frame _frame)
         {
             InitializeComponent();
             this.Width = 50; // Initial collapsed state
 
-            this.parentWindow = parentWindow;
+            this._frame = _frame;
             pageAcceuil = new pg_Acceuil(); 
             pageDepartement = new pg_Departement(); 
             pageMembre = new pg_Membre();   
@@ -69,11 +69,11 @@ namespace ADD_DABOMPA.Views.UserControls
         private void OpenWindow(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            if (btn.Equals(btn_Aceuil)) parentWindow.frm_body.Content = pageAcceuil;
-            else if (btn.Equals(btn_membre)) parentWindow.frm_body.Content = pageMembre;
-            else if (btn.Equals(btn_departement)) parentWindow.frm_body.Content = pageDepartement;
-            else if (btn.Equals(btn_flux_monetaire)) parentWindow.frm_body.Content = pageFlux_Monetaire;
-            else parentWindow.frm_body.Content = pageParaettre;
+            if (btn.Equals(btn_Aceuil)) _frame.Content = pageAcceuil;
+            else if (btn.Equals(btn_membre)) _frame.Content = pageMembre;
+            else if (btn.Equals(btn_departement)) _frame.Content = pageDepartement;
+            else if (btn.Equals(btn_flux_monetaire)) _frame.Content = pageFlux_Monetaire;
+            else _frame.Content = pageParaettre;
         }
     }
 }
