@@ -1,9 +1,10 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    x:Name="RD_LightMode">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="RD_LightMode">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Views/Resources/Styles/StyleMerging.xaml"/>
+        <ResourceDictionary Source="/Views/Resources/Styles/StyleMerging.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Color x:Key="stl_DefaultForeground">#242525</Color>

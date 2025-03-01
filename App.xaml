@@ -1,12 +1,13 @@
-﻿<Application x:Class="ADD_DABOMPA.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ADD_DABOMPA"
-             StartupUri="Views/Home.xaml">
+﻿<Application
+    x:Class="ADD_DABOMPA.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ADD_DABOMPA"
+    StartupUri="Views/Home.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Views/Resources/Styles/RD_LightMode.xaml"/>
+                <ResourceDictionary Source="/Views/Resources/Styles/RD_LightMode.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
         </ResourceDictionary>

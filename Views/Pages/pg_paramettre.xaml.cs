@@ -20,6 +20,8 @@ namespace ADD_DABOMPA.Views.Pages
     /// </summary>
     public partial class pg_paramettre : Page
     {
+        private bool isDarkTheme = false;
+
         public pg_paramettre()
         {
             InitializeComponent();
@@ -27,7 +29,10 @@ namespace ADD_DABOMPA.Views.Pages
 
         private void ChangeTheme(object sender, RoutedEventArgs e)
         {
-
+            isDarkTheme = !isDarkTheme;
+            string newThemePath = isDarkTheme ? "RD_DarkMode.xaml" : "RD_LightMode.xaml";
+            var newTheme = (ResourceDictionary)Application.LoadComponent(new Uri($"/Views/Resources/Styles/{newThemePath}", UriKind.Relative));
+            Application.Current.Resources.MergedDictionaries[0] = newTheme;
         }
     }
 }

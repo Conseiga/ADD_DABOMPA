@@ -16,7 +16,8 @@
             Width="70"
             Height="30"
             Checked="ChangeTheme"
-            IsChecked="False">
+            IsChecked="False"
+            Unchecked="ChangeTheme">
 
             <ToggleButton.Template>
                 <ControlTemplate>

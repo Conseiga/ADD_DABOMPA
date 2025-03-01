@@ -1,8 +1,7 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Views/Resources/Styles/StyleWindows.xaml"/>
-        <ResourceDictionary Source="/Views/Resources/Styles/StyleText.xaml"/>
-        <ResourceDictionary Source="/Views/Resources/Styles/StyleButton.xaml"/>
+        <ResourceDictionary Source="/Views/Resources/Styles/StyleWindows.xaml" />
+        <ResourceDictionary Source="/Views/Resources/Styles/StyleText.xaml" />
+        <ResourceDictionary Source="/Views/Resources/Styles/StyleButton.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
