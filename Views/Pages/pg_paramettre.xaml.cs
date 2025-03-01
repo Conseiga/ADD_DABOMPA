@@ -24,5 +24,10 @@ namespace ADD_DABOMPA.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void ChangeTheme(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
