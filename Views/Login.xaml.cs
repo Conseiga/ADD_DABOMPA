@@ -23,5 +23,10 @@ namespace ADD_DABOMPA.Views
         {
             InitializeComponent();
         }
+
+        private void WindowsMouseButtonLeftDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed) DragMove();
+        }
     }
 }

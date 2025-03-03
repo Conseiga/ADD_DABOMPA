@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ADD_DABOMPA.Views"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Login" Height="370" Width="400"
+        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="WindowsMouseButtonLeftDown">
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="/Views/Resources/Images/BackgroundImage/wnd_background.jpg"
+                        Stretch="Fill"/>
+        </Border.Background>
+        <Border CornerRadius="50"
+            BorderThickness="5"
+                Opacity=".7">
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="{DynamicResource stl_DefaultBackground}" Offset="0"/>
+                        <GradientStop Color="{DynamicResource stl_DefaultBackground_2}" Offset="0.25"/>
+                        <GradientStop Color="{DynamicResource stl_DefaultBackground}" Offset="0.5"/>
+                        <GradientStop Color="{DynamicResource stl_DefaultBackground_2}" Offset="0.75"/>
+                        <GradientStop Color="{DynamicResource stl_DefaultBackground}" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,1.2" EndPoint="0.0,0.5">
+                        <GradientStop Color="{DynamicResource stl_DefaultBackground_2}" Offset="0.15"/>
+                        <GradientStop Color="{DynamicResource stl_DefaultBackground}" Offset="1."/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+        </Border>
+    </Border>
+    
 </Window>
