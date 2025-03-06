@@ -126,6 +126,56 @@
         </Style.Triggers>
     </Style>
 
+    <Style x:Key="stl_DefaulSingleIcontButton" TargetType="Button">
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="Height" Value="35" />
+        <Setter Property="Width" Value="35" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForeground_2Brush}" />
+        <Setter Property="Margin" Value="0,0,2,0" />                           
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="border"
+                        Width="{TemplateBinding Width}"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="5"
+                        Padding="5">
+                        <!--  Icon Part  -->
+                        <Image
+                            x:Name="iconPresenter"
+                            Width="20"
+                            Height="20"
+                            Source="{TemplateBinding Tag}"
+                            Stretch="Uniform" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <!--  Mouse Over Effect  -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource stl_ConnectionButtonHoverBackgroundBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource stl_ConnectionButtonHoverForegroundBrush}" />
+            </Trigger>
+
+            <!--  Pressed Effect  -->
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="Black" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="Foreground" Value="White" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
 
     <!--  Connection button style  -->
     <Style

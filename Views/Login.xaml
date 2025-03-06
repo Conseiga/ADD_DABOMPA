@@ -48,15 +48,17 @@
                 </Grid.ColumnDefinitions>
 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="5*" />
-                    <RowDefinition Height="2*" />
-                    <RowDefinition Height="2*" />
-                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="2.5*" />
+                    <RowDefinition Height="6.4*" />
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="3*" />
                     <RowDefinition Height="2*" />
                 </Grid.RowDefinitions>
 
                 <Ellipse
                     Grid.Column="1"
+                    Grid.Row="1"
                     Width="115"
                     Height="115"
                     HorizontalAlignment="Center"
@@ -66,21 +68,28 @@
                     </Ellipse.Fill>
                 </Ellipse>
 
+                <Button Grid.Column="1" Grid.ColumnSpan="2" x:Name="btn_close"
+                    VerticalAlignment="Top"
+                    Margin="220,7,0,0"
+                    Style="{DynamicResource stl_DefaulSingleIcontButton}"        
+                    Content=""
+                    Tag="{StaticResource FluxIcon}" Height="36"/>
+
                 <TextBox
-                    Grid.Row="1"
+                    Grid.Row="2"
                     Grid.Column="1"
                     Style="{DynamicResource stl_DefaultTextBoxStyle}"
                     Tag="email ou nom d'utilisateur" />
 
                 <PasswordBox
-                    Grid.Row="2"
+                    Grid.Row="3"
                     Grid.Column="1"
                     Style="{DynamicResource stl_DefaultPasswordBoxStyle}"
                     Tag="mot de passe" />
 
                 <Button
                     x:Name="btn_se_connecter"
-                    Grid.Row="3"
+                    Grid.Row="4"
                     Grid.Column="1"
                     Width="300"
                     Content="se connecter"
