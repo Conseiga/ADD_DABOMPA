@@ -17,6 +17,35 @@ namespace ADD_DABOMPA.Views
     /// <summary>
     /// Logique d'interaction pour Login.xaml
     /// </summary>
+    /// 
+
+    public static class PasswordBoxHelper
+    {
+        public static readonly DependencyProperty IsPasswordEmptyProperty =
+            DependencyProperty.RegisterAttached("IsPasswordEmpty",
+                typeof(bool),
+                typeof(PasswordBoxHelper),
+                new FrameworkPropertyMetadata(true, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
+
+        public static bool GetIsPasswordEmpty(DependencyObject obj) => (bool)obj.GetValue(IsPasswordEmptyProperty);
+        public static void SetIsPasswordEmpty(DependencyObject obj, bool value) => obj.SetValue(IsPasswordEmptyProperty, value);
+
+        public static readonly DependencyProperty AttachProperty =
+            DependencyProperty.RegisterAttached("Attach",
+                typeof(bool),
+                typeof(PasswordBoxHelper),
+                new PropertyMetadata(false, Attach));
+
+        private static void Attach(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is PasswordBox pb)
+            {
+                pb.PasswordChanged += (s, _) =>
+                    SetIsPasswordEmpty(pb, string.IsNullOrEmpty(pb.Password));
+            }
+        }
+    }
+
     public partial class Login : Window
     {
         public Login()

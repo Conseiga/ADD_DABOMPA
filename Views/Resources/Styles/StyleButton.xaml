@@ -68,9 +68,68 @@
         </Style.Triggers>
     </Style>
 
+
+    <!--  Default style for a button  -->
+    <Style x:Key="stl_DefaultButton_2" TargetType="Button">
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForeground_2Brush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="border"
+                        Width="{TemplateBinding Width}"
+                        HorizontalAlignment="Center"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="17">
+                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                            <!--  Icon Part  -->
+                            <Image
+                                x:Name="iconPresenter"
+                                Width="20"
+                                Height="20"
+                                Margin="0,0,15,0"
+                                Source="{TemplateBinding Tag}"
+                                Stretch="Uniform" />
+                            <!--  Text Part  -->
+                            <ContentPresenter
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Content="{TemplateBinding Content}"
+                                TextElement.FontWeight="Bold"
+                                TextElement.Foreground="{TemplateBinding Foreground}" />
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <!--  Mouse Over Effect  -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource stl_MenuButtonHoverBackgroundBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource stl_DefaultForeground_2Brush}" />
+            </Trigger>
+
+            <!--  Pressed Effect  -->
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="DodgerBlue" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="Foreground" Value="White" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
     <!--  Connection button style  -->
     <Style
-        x:Key="stl_ConnectionButton"
+        x:Key="stl_deconnectionButton"
         BasedOn="{StaticResource stl_DefaultButton}"
         TargetType="Button">
         <Style.Triggers>

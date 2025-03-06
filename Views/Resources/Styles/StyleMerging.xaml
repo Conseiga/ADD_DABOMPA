@@ -3,5 +3,7 @@
         <ResourceDictionary Source="/Views/Resources/Styles/StyleWindows.xaml" />
         <ResourceDictionary Source="/Views/Resources/Styles/StyleText.xaml" />
         <ResourceDictionary Source="/Views/Resources/Styles/StyleButton.xaml" />
+        <ResourceDictionary Source="/Views/Resources/Styles/StyleTextbox.xaml" />
+        <ResourceDictionary Source="/Views/Resources/Styles/StylePasswordBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
