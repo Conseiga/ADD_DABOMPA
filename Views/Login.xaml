@@ -73,7 +73,7 @@
                     Margin="220,7,0,0"
                     Style="{DynamicResource stl_DefaulSingleIcontButton}"        
                     Content=""
-                    Tag="{StaticResource FluxIcon}" Height="36"/>
+                    Tag="{StaticResource CloseIcon}" Height="36"/>
 
                 <TextBox
                     Grid.Row="2"
