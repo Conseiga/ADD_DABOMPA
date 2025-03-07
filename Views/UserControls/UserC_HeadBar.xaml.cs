@@ -20,9 +20,22 @@ namespace ADD_DABOMPA.Views.UserControls
     /// </summary>
     public partial class UserC_HeadBar : UserControl
     {
-        public UserC_HeadBar()
+        public Home parentWindow {get; private set; }
+
+        public UserC_HeadBar(Home parentWindow)
         {
             InitializeComponent();
+            this.parentWindow = parentWindow;
+        }
+
+        private void LogOut(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Etes vous sure de vouloir vous déconnecter ?", "Déconnection", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                Login loginWindow = new Login();
+                loginWindow.Show();
+                parentWindow.Close();
+            }
         }
     }
 }

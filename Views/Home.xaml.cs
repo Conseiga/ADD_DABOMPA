@@ -18,12 +18,20 @@ namespace ADD_DABOMPA;
 public partial class Home : Window
 {
     private UserC_SideBarMenu uc_UserC_SideBarMenu;
+    private UserC_HeadBar uc_UserC_HeadBar;
     public Home()
     {
         InitializeComponent();
         uc_UserC_SideBarMenu = new UserC_SideBarMenu(frm_body);
+        uc_UserC_HeadBar = new UserC_HeadBar(this);
+
+        Grid.SetRow(uc_UserC_HeadBar, 0); // Row 1  
+        Grid.SetColumn(uc_UserC_HeadBar, 0); // Column 1  
+
         Grid.SetRow(uc_UserC_SideBarMenu, 0); // Row 1  
         Grid.SetColumn(uc_UserC_SideBarMenu, 0); // Column 1  
-        grd_MainGrid.Children.Add(uc_UserC_SideBarMenu);
+
+        grd_Maingrid.Children.Add(uc_UserC_HeadBar);
+        grd_subMaingrid.Children.Add(uc_UserC_SideBarMenu);
     }
 }

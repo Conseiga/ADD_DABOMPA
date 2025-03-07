@@ -1,32 +1,36 @@
-﻿<Window x:Class="ADD_DABOMPA.Home"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
-        xmlns:local="clr-namespace:ADD_DABOMPA.Views.UserControls" 
-        mc:Ignorable="d"
-        WindowStartupLocation="CenterScreen"
-        MinWidth="900"
-        Style="{DynamicResource StyleWindows}"
-        Title="ADD Dabompa">
-    <Grid>
+﻿<Window
+    x:Class="ADD_DABOMPA.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ADD_DABOMPA.Views.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ADD Dabompa"
+    MinWidth="900"
+    Style="{DynamicResource StyleWindows}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid x:Name="grd_Maingrid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
-        <local:UserC_HeadBar Margin="5,0,0,0"/>
-
-        <Grid Grid.Row="1" x:Name="grd_MainGrid">
+        <Grid x:Name="grd_subMaingrid" Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <!-- Main Content -->
-            <Border Grid.Column="1" Background="{DynamicResource stl_DefaultBackgroundPageBrush}" CornerRadius="10,0,0,0">
-                <Frame x:Name="frm_body" Margin="2"
-                       NavigationUIVisibility="Hidden" />
+            <!--  Main Content  -->
+            <Border
+                Grid.Column="1"
+                Background="{DynamicResource stl_DefaultBackgroundPageBrush}"
+                CornerRadius="10,0,0,0">
+                <Frame
+                    x:Name="frm_body"
+                    Margin="2"
+                    NavigationUIVisibility="Hidden" />
             </Border>
         </Grid>
 

@@ -57,8 +57,8 @@
                 </Grid.RowDefinitions>
 
                 <Ellipse
-                    Grid.Column="1"
                     Grid.Row="1"
+                    Grid.Column="1"
                     Width="115"
                     Height="115"
                     HorizontalAlignment="Center"
@@ -68,12 +68,17 @@
                     </Ellipse.Fill>
                 </Ellipse>
 
-                <Button Grid.Column="1" Grid.ColumnSpan="2" x:Name="btn_close"
-                    VerticalAlignment="Top"
+                <Button
+                    x:Name="btn_closeApplication"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Height="36"
                     Margin="220,7,0,0"
-                    Style="{DynamicResource stl_DefaulSingleIcontButton}"        
+                    VerticalAlignment="Top"
+                    Click="CloseApplication"
                     Content=""
-                    Tag="{StaticResource CloseIcon}" Height="36"/>
+                    Style="{DynamicResource stl_DefaulSingleIcontButton}"
+                    Tag="{StaticResource CloseIcon}" />
 
                 <TextBox
                     Grid.Row="2"
@@ -92,6 +97,7 @@
                     Grid.Row="4"
                     Grid.Column="1"
                     Width="300"
+                    Click="OpenApplication"
                     Content="se connecter"
                     FontSize="12"
                     Style="{DynamicResource stl_DefaultButton_2}"

@@ -57,5 +57,18 @@ namespace ADD_DABOMPA.Views
         {
             if (e.LeftButton == MouseButtonState.Pressed) DragMove();
         }
+
+        private void CloseApplication(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void OpenApplication(object sender, RoutedEventArgs e)
+        {
+            Home mainWindow = new Home();
+            mainWindow.Show();
+            MessageBox.Show("Vous êtes connecté avec succès !", "Connection Réussie", MessageBoxButton.OK, MessageBoxImage.Information);
+            Close();
+        }
     }
 }
