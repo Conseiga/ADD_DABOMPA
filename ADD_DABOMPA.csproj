@@ -49,4 +49,8 @@
     <Resource Include="Views\Resources\Images\Logos\add_logo.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
