@@ -9,30 +9,29 @@ namespace ADD_DABOMPA.ViewModels
 {
     public class ViewModelsCommand : ICommand
     {
-        private readonly Action<object?> _executeAction;
-        private readonly Predicate<object?> _canExecuteAction;
-        public event EventHandler? CanExecuteChanged;
+        private Action<object> execute;
+        private Func<object, bool> canExecute;
 
-        public ViewModelsCommand(Action<object?> executeAction, Predicate<object?> canExecuteAction)
+        public event EventHandler? CanExecuteChanged
         {
-            _executeAction = executeAction;
-            _canExecuteAction = canExecuteAction;
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
         }
 
-        public ViewModelsCommand(Action<object?> executeAction)
+        public ViewModelsCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
-            _executeAction = executeAction;
-            _canExecuteAction = null;
+            this.execute = execute;
+            this.canExecute = canExecute;
         }
 
         public bool CanExecute(object? parameter)
         {
-            return _canExecuteAction?.Invoke(parameter) ?? true;
+            return canExecute == null || canExecute(parameter);
         }
 
         public void Execute(object? parameter)
         {
-            _executeAction(parameter);
+            execute(parameter);
         }
     }
 }

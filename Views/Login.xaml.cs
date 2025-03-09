@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ADD_DABOMPA.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,6 +52,8 @@ namespace ADD_DABOMPA.Views
         public Login()
         {
             InitializeComponent();
+            LoginViewModel _loginViewModel = new LoginViewModel();
+            DataContext = _loginViewModel;
         }
 
         private void WindowsMouseButtonLeftDown(object sender, MouseButtonEventArgs e)
