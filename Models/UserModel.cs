@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ADD_DABOMPA.Models
 {
-    internal class UserModel
+    public class UserModel
     {
-        public int email { get; set; }
-        public string login { get; set; } 
+        public string email { get; set; }
+        public string login { get; set; }
         public string password { get; set; }
     }
 }

@@ -1,37 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 
 namespace ADD_DABOMPA.ViewModels
 {
     public class ViewModelsCommand : ICommand
     {
-        private Action<object> execute;
-        private Func<object, bool> canExecute;
+        private readonly Action _execute;
+        private readonly Func<bool> _canExecute;
 
-        public event EventHandler? CanExecuteChanged
+        public ViewModelsCommand(Action execute, Func<bool> canExecute = null)
         {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public ViewModelsCommand(Action<object> execute, Func<object, bool> canExecute = null)
-        {
-            this.execute = execute;
-            this.canExecute = canExecute;
+            _execute = execute ?? throw new ArgumentNullException(nameof(execute));
+            _canExecute = canExecute;
         }
 
         public bool CanExecute(object? parameter)
         {
-            return canExecute == null || canExecute(parameter);
+            return _canExecute == null || _canExecute();
         }
 
-        public void Execute(object? parameter)
+        public void Execute(object? _) => _execute();
+
+        public event EventHandler? CanExecuteChanged
         {
-            execute(parameter);
+            add => CommandManager.RequerySuggested += value;
+            remove => CommandManager.RequerySuggested -= value;
         }
     }
 }

@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MVVM\**" />
+    <EmbeddedResource Remove="MVVM\**" />
+    <None Remove="MVVM\**" />
+    <Page Remove="MVVM\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Views\Resources\Images\BackgroundImage\wnd_background.jpg" />
     <None Remove="Views\Resources\Images\Icons\btn-close-window-dark-mode-100.png" />
     <None Remove="Views\Resources\Images\Icons\btn-close-window-light-mode-100.png" />
@@ -29,6 +36,7 @@
     <PackageReference Include="MahApps.Metro" Version="2.4.10" />
     <PackageReference Include="MahApps.Metro.IconPacks" Version="5.1.0" />
     <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="9.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,10 +55,6 @@
     <Resource Include="Views\Resources\Images\Icons\power_button_off_white.png" />
     <Resource Include="Views\Resources\Images\Logos\CarteGuinee.png" />
     <Resource Include="Views\Resources\Images\Logos\add_logo.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="MVVM\" />
   </ItemGroup>
 
 </Project>
