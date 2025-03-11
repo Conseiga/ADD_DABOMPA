@@ -83,12 +83,14 @@
                 <TextBox
                     Grid.Row="2"
                     Grid.Column="1"
+                    Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"
                     Style="{DynamicResource stl_DefaultTextBoxStyle}"
                     Tag="email ou nom d'utilisateur" />
 
                 <PasswordBox
                     Grid.Row="3"
                     Grid.Column="1"
+                    Password="{Binding Password, UpdateSourceTrigger=PropertyChanged}"
                     Style="{DynamicResource stl_DefaultPasswordBoxStyle}"
                     Tag="mot de passe" />
 
@@ -97,7 +99,7 @@
                     Grid.Row="4"
                     Grid.Column="1"
                     Width="300"
-                    Click="OpenApplication"
+                    Command="{Binding LoginCommand}"
                     Content="se connecter"
                     FontSize="12"
                     Style="{DynamicResource stl_DefaultButton_2}"

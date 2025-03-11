@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ADD_DABOMPA.Models
+﻿namespace ADD_DABOMPA.Models
 {
     public class UserModel
     {

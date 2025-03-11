@@ -1,17 +1,8 @@
 ﻿using ADD_DABOMPA.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace ADD_DABOMPA.Views
 {
@@ -53,6 +44,13 @@ namespace ADD_DABOMPA.Views
         {
             InitializeComponent();
             LoginViewModel _loginViewModel = new LoginViewModel();
+            _loginViewModel.RequestClose += () =>
+            {
+                // Open MainWindow and close LoginWindow
+                var mainWindow = new Home();
+                mainWindow.Show();
+                this.Close();
+            };
             DataContext = _loginViewModel;
         }
 

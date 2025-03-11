@@ -10,15 +10,18 @@ namespace ADD_DABOMPA.ViewModels
 {
     internal class LoginViewModel : ViewModelsBase
     {
+        // Command bound to the login button
+        public ICommand LoginCommand { get; }
+
+        private UserModel _currentUser; // Holds input data (email/password)
+
+
         public LoginViewModel()
         {
             LoginCommand = new ViewModelsCommand(ExecuteLogin, CanExecuteLogin);
             _currentUser = new UserModel(); // Initialize user model
         }
 
-
-
-        private UserModel _currentUser = new UserModel(); // Holds input data (email/password)
 
         // Properties bound to the View's email/password fields
         public string Email
@@ -47,8 +50,6 @@ namespace ADD_DABOMPA.ViewModels
             }
         }
 
-        // Command bound to the login button
-        public ICommand LoginCommand { get; }
 
         private bool CanExecuteLogin()
         {
@@ -56,34 +57,34 @@ namespace ADD_DABOMPA.ViewModels
         }
 
         // Logic to validate login
+        public event Action RequestClose; // Add this line
+
         private async void ExecuteLogin()
         {
             try
             {
-                var userFromDb = await Task.Run(() => UserRepository.GetUserByEmail(Email)); // Async call
+                var userFromDb = await Task.Run(() => UserRepository.GetUserByEmail(Email));
 
                 if (userFromDb == null)
                 {
-                    MessageBox.Show("User not found.");
+                    MessageBox.Show("User not found.", "Login", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
-                // Secure password checking should be used in real applications
                 if (userFromDb.password == Password)
                 {
-                    MessageBox.Show("Login successful!");
-                    // Navigate to another page here
+                    MessageBox.Show("Login successful!", "Login", MessageBoxButton.OK, MessageBoxImage.Information);
+                    RequestClose?.Invoke(); // Trigger the event to close the window
                 }
                 else
                 {
-                    MessageBox.Show("Wrong password.");
+                    MessageBox.Show("Wrong password.", "Login", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}");
+                MessageBox.Show($"An error occurred: {ex.Message}", "Login", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
     }
 }
