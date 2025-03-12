@@ -71,5 +71,13 @@ namespace ADD_DABOMPA.Views
             MessageBox.Show("Vous êtes connecté avec succès !", "Connection Réussie", MessageBoxButton.OK, MessageBoxImage.Information);
             Close();
         }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is LoginViewModel viewModel)
+            {
+                viewModel.Password = ((PasswordBox)sender).Password;
+            }
+        }
     }
 }

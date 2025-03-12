@@ -73,7 +73,6 @@ namespace ADD_DABOMPA.ViewModels
 
                 if (userFromDb.password == Password)
                 {
-                    MessageBox.Show("Login successful!", "Login", MessageBoxButton.OK, MessageBoxImage.Information);
                     RequestClose?.Invoke(); // Trigger the event to close the window
                 }
                 else

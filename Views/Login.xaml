@@ -90,7 +90,7 @@
                 <PasswordBox
                     Grid.Row="3"
                     Grid.Column="1"
-                    Password="{Binding Password, UpdateSourceTrigger=PropertyChanged}"
+                    PasswordChanged="PasswordBox_PasswordChanged"
                     Style="{DynamicResource stl_DefaultPasswordBoxStyle}"
                     Tag="mot de passe" />
 
