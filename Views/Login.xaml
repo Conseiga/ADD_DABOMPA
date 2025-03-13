@@ -83,9 +83,9 @@
                 <TextBox
                     Grid.Row="2"
                     Grid.Column="1"
-                    Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"
                     Style="{DynamicResource stl_DefaultTextBoxStyle}"
-                    Tag="email ou nom d'utilisateur" />
+                    Tag="email ou nom d'utilisateur"
+                    Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" />
 
                 <PasswordBox
                     Grid.Row="3"
@@ -103,7 +103,7 @@
                     Content="se connecter"
                     FontSize="12"
                     Style="{DynamicResource stl_DefaultButton_2}"
-                    Tag="{StaticResource FluxIcon}" />
+                    Tag="{StaticResource LoginIcon}" />
             </Grid>
 
         </Border>

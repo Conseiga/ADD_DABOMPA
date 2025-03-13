@@ -19,6 +19,7 @@
     <None Remove="Views\Resources\Images\BackgroundImage\wnd_background.jpg" />
     <None Remove="Views\Resources\Images\Icons\btn-close-window-dark-mode-100.png" />
     <None Remove="Views\Resources\Images\Icons\btn-close-window-light-mode-100.png" />
+    <None Remove="Views\Resources\Images\Icons\btn-login-100.png" />
     <None Remove="Views\Resources\Images\Icons\btn-logout-100.png" />
     <None Remove="Views\Resources\Images\Icons\btn-paramettre-100.png" />
     <None Remove="Views\Resources\Images\Icons\btn_departement_64.png" />
@@ -44,6 +45,7 @@
     <Resource Include="Views\Resources\Images\BackgroundImage\wnd_background.jpg" />
     <Resource Include="Views\Resources\Images\Icons\btn-close-window-dark-mode-100.png" />
     <Resource Include="Views\Resources\Images\Icons\btn-close-window-light-mode-100.png" />
+    <Resource Include="Views\Resources\Images\Icons\btn-login-100.png" />
     <Resource Include="Views\Resources\Images\Icons\btn-logout-100.png" />
     <Resource Include="Views\Resources\Images\Icons\btn-paramettre-100.png" />
     <Resource Include="Views\Resources\Images\Icons\btn_departement_64.png" />

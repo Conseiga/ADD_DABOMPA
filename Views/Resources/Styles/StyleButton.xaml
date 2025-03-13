@@ -9,6 +9,7 @@
     <BitmapImage x:Key="LogoutIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn-logout-100.png" />
     <BitmapImage x:Key="SettingIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn-paramettre-100.png" />
     <BitmapImage x:Key="CloseIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn-close-window-light-mode-100.png" />
+    <BitmapImage x:Key="LoginIcon" UriSource="/ADD_DABOMPA;component/Views/Resources/Images/Icons/btn-login-100.png" />
 
 
 
