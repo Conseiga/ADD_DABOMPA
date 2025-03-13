@@ -8,10 +8,120 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="pg_Acceuil">
 
-    <Grid>
-        <Viewbox>
-            <TextBlock
-                Text="Acceuil"/>
-        </Viewbox>
+    <Grid Margin="0,5,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <!--header bar-->
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width=".5*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--header total membre-->
+            <Viewbox Margin="20,0,0,0">
+                <StackPanel 
+                    Orientation="Horizontal">
+                    <TextBlock 
+                        Text="Membres Total "
+                        Style="{DynamicResource stl_DefaultTextBlock}"
+                        Foreground="#0664C6"
+                        />
+                    <TextBlock
+                        Text="521"
+                        Style="{DynamicResource stl_DefaultTextBlock}"
+                        Foreground="#0AA14E"
+                        />
+                </StackPanel>
+            </Viewbox>
+
+            <!--header total departement-->
+            <Grid Grid.Column="1"
+                Margin="20,0,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Margin="15">
+                    <StackPanel 
+                        Orientation="Horizontal">
+                        <TextBlock 
+                            Text="Hommes "
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            />
+                        <TextBlock
+                            Text="521"
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            Foreground="#0AA14E"
+                            />
+                    </StackPanel>
+                </Viewbox>
+
+                <Viewbox Margin="15" Grid.Column="1">
+                    <StackPanel 
+                        Orientation="Horizontal">
+                        <TextBlock 
+                            Text="Femmes "
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            />
+                        <TextBlock
+                            Text="521"
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            Foreground="#0AA14E"
+                            />
+                    </StackPanel>
+                </Viewbox>
+
+                <Viewbox Margin="15" Grid.Column="2">
+                    <StackPanel 
+                        Orientation="Horizontal">
+                        <TextBlock 
+                            Text="Jeunes "
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            />
+                        <TextBlock
+                            Text="521"
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            Foreground="#0AA14E"
+                            />
+                    </StackPanel>
+                </Viewbox>
+
+                <Viewbox Margin="15" Grid.Column="3">
+                    <StackPanel 
+                        Orientation="Horizontal">
+                        <TextBlock 
+                            Text="Enfants "
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            />
+                        <TextBlock
+                            Text="521"
+                            Style="{DynamicResource stl_DefaultTextBlock}"
+                            Foreground="#0AA14E"
+                            />
+                    </StackPanel>
+                </Viewbox>
+            </Grid>
+
+            <!--header année en cours-->
+            <Viewbox Margin="10" Grid.Column="2">
+                <StackPanel>
+                    <TextBlock 
+                        Text="2025"
+                        Foreground="#0664C6"
+                        Style="{DynamicResource stl_DefaultTextBlock}"
+                        />
+                </StackPanel>
+            </Viewbox>
+        </Grid>
+
+        <!--header bar-->
+        
     </Grid>
 </Page>
