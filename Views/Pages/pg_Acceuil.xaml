@@ -15,6 +15,7 @@
         </Grid.RowDefinitions>
 
         <!--header bar-->
+
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
@@ -120,8 +121,22 @@
                 </StackPanel>
             </Viewbox>
         </Grid>
-
+        
         <!--header bar-->
+
+        <!--body bar-->
+        <ScrollViewer Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="210"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                
+                
+            </Grid>
+
+        </ScrollViewer>
+        
         
     </Grid>
 </Page>

@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="ADD_DABOMPA.Views.UserControls.UserC_Apropos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ADD_DABOMPA.Views.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock 
+            Grid.Row="0"
+            Text="A   p r o p o s"
+            Style="{DynamicResource stl_BleuHeadingTextBlock}"
+            FontSize="25"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            />
+        <!--berger-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            
+            
+            <Ellipse
+                Width="100"
+                Height="100"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Views/Resources/Images/BackgroundImage/wnd_background.jpg" />
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <StackPanel Grid.Row="1" Orientation="Vertical">
+                <TextBlock 
+                    Text="Berger de l'Eglise"
+                    Style="{DynamicResource stl_BleuHeadingTextBlock}"
+                    FontSize="15"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+
+                <TextBlock 
+                    Grid.Row="3"
+                    Text="Pasteur Daniel TOUNKARA"
+                    Style="{DynamicResource stl_DefaultTextBlock}"
+                    FontSize="12"
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+
+            </StackPanel>
+
+        </Grid>
+        
+        <!--historique-->
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock 
+                Text="Historique de l'Eglise"
+                Style="{DynamicResource stl_DefaultTextBlock}"
+                FontSize="18"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"/>
+
+            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                <FlowDocument>
+                    <Section>
+                        <Paragraph Style="{DynamicResource stl_DefaultHeaderParagraph}"  FontSize="16" >La genèse de l'église</Paragraph>
+                        <Paragraph Style="{DynamicResource stl_DefaultParagraph}" FontSize="15">
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            <Bold>bold</Bold> ,
+                            <Italic>italics</Italic> , and
+                            <Underline>underline</Underline> .
+                        </Paragraph>
+
+                        <Paragraph Style="{DynamicResource stl_DefaultHeaderParagraph}"  FontSize="16" >Quelques moments fort de l'église</Paragraph>
+                        <Paragraph Style="{DynamicResource stl_DefaultParagraph}" FontSize="15">
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            <Bold>bold</Bold> ,
+                            <Italic>italics</Italic> , and
+                            <Underline>underline</Underline> .
+                        </Paragraph>
+
+                        <Paragraph Style="{DynamicResource stl_DefaultHeaderParagraph}"  FontSize="16" >L'église maintenant</Paragraph>
+                        <Paragraph Style="{DynamicResource stl_DefaultParagraph}" FontSize="15">
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            This is a paragraph explaining some information. You can format text using
+                            <Bold>bold</Bold> ,
+                            <Italic>italics</Italic> , and
+                            <Underline>underline</Underline> .
+                        </Paragraph>
+
+                        <Paragraph FontSize="16" FontWeight="Bold">Heading 2</Paragraph>
+                        <Paragraph>
+                            Another paragraph with more details. You can even include lists:
+                        </Paragraph>
+
+
+                        <Paragraph FontSize="16" FontWeight="Bold">Conclusion</Paragraph>
+                        <Paragraph>
+                            This method allows you to **display** text in a structured way without using
+                        a `TextBlock` or `RichTextBox`.
+                        </Paragraph>
+                    </Section>
+                </FlowDocument>
+            </FlowDocumentScrollViewer>
+        </Grid>
+    </Grid>
+</UserControl>

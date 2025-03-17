@@ -33,6 +33,5 @@
                     NavigationUIVisibility="Hidden" />
             </Border>
         </Grid>
-
     </Grid>
 </Window>

@@ -8,4 +8,22 @@
         <Setter Property="FontWeight" Value="Bold" />
     </Style>
 
+    <Style x:Key="stl_BleuHeadingTextBlock" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForeground_2Brush}" />
+        <Setter Property="FontFamily" Value="{StaticResource BleqckiFont}" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="stl_DefaultParagraph" TargetType="Paragraph">
+        <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForegroundBrush}" />
+        <Setter Property="FontFamily" Value="{StaticResource BleqckiFont}" />
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+    <Style x:Key="stl_DefaultHeaderParagraph" TargetType="Paragraph">
+        <Setter Property="Foreground" Value="{DynamicResource stl_DefaultForegroundBrush}" />
+        <Setter Property="FontFamily" Value="{StaticResource BleqckiFont}" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
 </ResourceDictionary>
