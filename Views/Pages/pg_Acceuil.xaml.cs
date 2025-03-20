@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using ADD_DABOMPA.Views.UserControls;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace ADD_DABOMPA.Views
 {
@@ -20,9 +9,17 @@ namespace ADD_DABOMPA.Views
     /// </summary>
     public partial class pg_Acceuil : Page
     {
+        private UserC_Apropos _Apropos;
+
         public pg_Acceuil()
         {
             InitializeComponent();
+            _Apropos = new UserC_Apropos();
+            Grid.SetRow(_Apropos, 0);
+            Grid.SetColumn(_Apropos, 0);
+            grd_Content.Children.Add(_Apropos);
         }
+
+
     }
 }

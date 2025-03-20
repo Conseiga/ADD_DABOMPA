@@ -126,7 +126,7 @@
 
         <!--body bar-->
         <ScrollViewer Grid.Row="1">
-            <Grid>
+            <Grid x:Name="grd_Content">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="210"/>
                     <RowDefinition Height="5*"/>
